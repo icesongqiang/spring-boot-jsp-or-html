@@ -1,9 +1,10 @@
 <html>
 
+<!-- 引入js -->
 <script>
-  var model=[];
-  model.host="${model.host}";
-  alert(model.host);
+  var LocalModel=[];
+  LocalModel.host="${model.host}";
+  LocalModel.name="${model.name}";
 </script>
 
 <title>${model.host }</title>
@@ -14,6 +15,7 @@
 </h2>
 <p>
   <hr/>
+  <%-- jsp 插入代码段 --%>
 	<% 
 		out.println("Your IP address is " + request.getRemoteAddr());
 	%> 
